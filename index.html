@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samuel Black | Engineer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Samuel Black</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Innovate. Engineer. Impact.</h1>
+      <p>Mechanical & Biomedical Engineer | Product Design | CAD | FEA</p>
+      <a href="#projects" class="cta-button">View My Work</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I’m a multidisciplinary engineer with a background in mechanical and biomedical engineering, driven by a simple goal: to keep improving and build things that make the world better. With over two years of experience as a mechanical design engineer and a strong academic foundation (holding both a BEng and MEng in Biomedical Engineering), I bring a unique blend of technical depth, creativity, and purpose to everything I do.
+    </p>
+    <p>
+      My work so far has focused heavily on design—turning concepts into manufacturable solutions using tools like Creo, SolidWorks, FEA software, MATLAB, and Python. Whether I’m optimizing a structural component, developing a lab-on-a-disc device, or collaborating across teams to solve complex problems, I approach each challenge with hands-on curiosity and a systems mindset.
+    </p>
+    <p>
+      Above all, I care about engineering with intent—building technologies that are not only efficient, but meaningful. I’m always looking for new challenges that push me to grow, collaborate, and contribute to something larger than myself.
+    </p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Convective PCR</h3>
+        <p>
+          Designed and developed a centrifugal microfluidic “lab-on-a-disc” (LoaD) platform to automate analysis, breakdown, and testing of biological and chemical samples. Utilizes centrifugal force to eliminate external pumps, enabling low-cost, modular point-of-care diagnostics.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Gel-Filled Additively-Manufactured Lattice Structures</h3>
+        <p>
+          This project focused on enhancing helmet liner performance by developing gel-filled prismatic lattice structures aimed at improving energy dissipation during impact. Traditional EPS foams reduce linear forces but struggle with rotational acceleration—one of the leading causes of traumatic brain injuries. By 3D printing lattice structures from various polymers and filling them with agar-based gel, the study demonstrated that gel-filled lattices significantly outperformed unfilled counterparts in quasi-static compression tests, showing strong potential for next-generation impact protection solutions.
+        </p>
+        <p><a href="https://doi.org/10.1016/j.mtcomm.2023.106164" target="_blank">Read the publication</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:sam.black.01@gmail.com">sam.black.01@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/sam-black-b94a2818b/" target="_blank">linkedin.com/in/sam-black-b94a2818b</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Samuel Black. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll on nav link click
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
