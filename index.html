@@ -3,80 +3,320 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Samuel Black — Lead Design Engineer (Turmec) | Mechanical & Biomedical Engineering | CAD, DFM, systems design." />
+  <meta name="theme-color" content="#0b0f19" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Samuel Black | Engineer Portfolio" />
+  <meta property="og:description" content="Lead Design Engineer focused on mechanical systems design, CAD/DFM, and biomedical R&D." />
+  <meta property="og:type" content="website" />
+
   <title>Samuel Black | Engineer Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Samuel Black",
+    "jobTitle": "Lead Design Engineer",
+    "alumniOf": "Dublin City University",
+    "url": "",
+    "sameAs": ["https://www.linkedin.com/in/sam-black"],
+    "knowsAbout": ["Mechanical Design", "Biomedical Engineering", "Creo", "SolidWorks", "DFM", "Prototyping", "Thermofluidics"]
+  }
+  </script>
 </head>
+
 <body>
-  <nav class="navbar">
-    <div class="logo">Samuel Black</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Innovate. Engineer. Impact.</h1>
-      <p>Mechanical & Biomedical Engineer | Product Design | CAD | FEA</p>
-      <a href="#projects" class="cta-button">View My Work</a>
-    </div>
-  </section>
-
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I’m a multidisciplinary engineer with a background in mechanical and biomedical engineering, driven by a simple goal: to keep improving and build things that make the world better. With over two years of experience as a mechanical design engineer and a strong academic foundation (holding both a BEng and MEng in Biomedical Engineering), I bring a unique blend of technical depth, creativity, and purpose to everything I do.
-    </p>
-    <p>
-      My work so far has focused heavily on design—turning concepts into manufacturable solutions using tools like Creo, SolidWorks, FEA software, MATLAB, and Python. Whether I’m optimizing a structural component, developing a lab-on-a-disc device, or collaborating across teams to solve complex problems, I approach each challenge with hands-on curiosity and a systems mindset.
-    </p>
-    <p>
-      Above all, I care about engineering with intent—building technologies that are not only efficient, but meaningful. I’m always looking for new challenges that push me to grow, collaborate, and contribute to something larger than myself.
-    </p>
-  </section>
-
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="card-container">
-      <div class="card">
-        <h3>Convective PCR</h3>
-        <p>
-          Designed and developed a centrifugal microfluidic “lab-on-a-disc” (LoaD) platform to automate analysis, breakdown, and testing of biological and chemical samples. Utilizes centrifugal force to eliminate external pumps, enabling low-cost, modular point-of-care diagnostics.
-        </p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">SB</div>
+        <div>
+          <h1 class="brand-name">Samuel Black</h1>
+          <p class="brand-tag">Lead Design Engineer • Mechanical & Biomedical Engineering</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Gel-Filled Additively-Manufactured Lattice Structures</h3>
-        <p>
-          This project focused on enhancing helmet liner performance by developing gel-filled prismatic lattice structures aimed at improving energy dissipation during impact. Traditional EPS foams reduce linear forces but struggle with rotational acceleration—one of the leading causes of traumatic brain injuries. By 3D printing lattice structures from various polymers and filling them with agar-based gel, the study demonstrated that gel-filled lattices significantly outperformed unfilled counterparts in quasi-static compression tests, showing strong potential for next-generation impact protection solutions.
-        </p>
-        <p><a href="https://doi.org/10.1016/j.mtcomm.2023.106164" target="_blank">Read the publication</a></p>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-ghost" id="themeToggle" type="button" aria-label="Toggle theme">
+          <span class="icon" aria-hidden="true">☾</span>
+          <span class="btn-text">Theme</span>
+        </button>
+        <a class="btn" href="assets/Samuel_Black_CV_2026.pdf" target="_blank" rel="noopener">Download CV</a>
       </div>
     </div>
-  </section>
+  </header>
 
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:sam.black.01@gmail.com">sam.black.01@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/sam-black-b94a2818b/" target="_blank">linkedin.com/in/sam-black-b94a2818b</a></p>
-  </section>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <h2>Building robust, manufacturable systems — and the evidence to back them.</h2>
+          <p>
+            I’m a DCU-trained engineer (MEng/BEng) working as a <strong>Lead Design Engineer</strong> at Turmec,
+            delivering large-scale mechanical systems from concept through installation.
+            I’m strongest at the interface of <strong>design ↔ fabrication</strong>: CAD detail, DFM choices,
+            coordination with suppliers/site teams, and calm delivery under deadlines.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="#projects">View projects</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
 
-  <footer>
-    <p>&copy; 2025 Samuel Black. All rights reserved.</p>
+          <dl class="quick-facts" aria-label="Quick facts">
+            <div>
+              <dt>Based</dt>
+              <dd>London, UK</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>Mechanical systems, CAD, DFM</dd>
+            </div>
+            <div>
+              <dt>Tools</dt>
+              <dd>Creo, SolidWorks, MATLAB, Python</dd>
+            </div>
+          </dl>
+        </div>
+
+        <aside class="hero-card reveal" aria-label="Highlights">
+          <h3>Highlights</h3>
+          <ul class="checklist">
+            <li>Led a multi‑million‑dollar mechanical systems project, managing a 6‑person design team.</li>
+            <li>Delivered detailed CAD + fabrication drawings in Creo with ISO safety compliance.</li>
+            <li>Built R&D prototypes in biomedical impact testing (46% energy absorption improvement).</li>
+          </ul>
+          <div class="pill-row" aria-label="Key domains">
+            <span class="pill">Systems design</span>
+            <span class="pill">DFM</span>
+            <span class="pill">Prototyping</span>
+            <span class="pill">Data analysis</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container reveal">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>
+            I combine hands-on mechanical design delivery with biomedical R&D experience.
+            I like problems where clean engineering and clear communication matter: aligning stakeholders,
+            simplifying complexity, and designing parts that are actually easy to make and assemble.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Experience</h2>
+          <p>Recent roles with a focus on ownership, delivery, and leadership.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <h3>Turmec Teoranta</h3>
+              <p class="muted">Lead Design Engineer • May 2024 – Present • Meath, Ireland</p>
+            </div>
+            <ul>
+              <li>Led a multi‑million‑dollar mechanical systems project from concept to installation, managing a six‑person design team.</li>
+              <li>Liaised with clients, suppliers, and site teams to align engineering output with commercial objectives and deadlines.</li>
+              <li>Created detailed 3D CAD models and fabrication drawings using Creo; ensured compliance with ISO safety standards.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <h3>Dublin City University</h3>
+              <p class="muted">Biomedical Engineering Intern • May 2022 – Sept 2022 • Dublin, Ireland</p>
+            </div>
+            <ul>
+              <li>Designed and tested gel‑filled prismatic lattice structures for biomechanical impact studies using 3D‑printed materials.</li>
+              <li>Analysed compression test data in MATLAB and contributed to research documentation and reporting.</li>
+              <li>Collaborated with clinical and academic stakeholders to refine protocols for impact testing and materials evaluation.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <h3>Causey</h3>
+              <p class="muted">Operational Manager (Seasonal) • Sept 2019 – Nov 2025 • Meath, Ireland</p>
+            </div>
+            <ul>
+              <li>Supervised 25+ staff nightly during high‑capacity events; resolved logistical and personnel issues under pressure.</li>
+              <li>Designed and constructed interactive sets, ensuring safety and structural integrity in a fast‑paced environment.</li>
+              <li>Built strong leadership and crisis‑management habits through high‑stakes, public‑facing operations.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Projects</h2>
+          <p>Selected work across biomedical R&D and engineering software delivery.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-top">
+              <h3>Convective PCR Microfluidic Platform</h3>
+              <span class="tag">Biomedical R&D</span>
+            </div>
+            <ul>
+              <li>Engineered a centrifugal “lab‑on‑a‑disc” microfluidic system for pump‑free sample processing.</li>
+              <li>Designed integrated PCR heating zones to enable rapid thermal cycling for low‑resource diagnostics.</li>
+              <li>Applied thermofluidic modelling + CAD design for precise temperature control and compact functionality.</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top">
+              <h3>Advanced Helmet Liner Development</h3>
+              <span class="tag">Prototyping</span>
+            </div>
+            <ul>
+              <li>Designed gel‑filled prismatic lattice geometries to improve energy absorption.</li>
+              <li>Fabricated prototypes with multi‑material 3D printing (PLA, PET‑G, ABS).</li>
+              <li>Demonstrated <strong>46%</strong> higher energy absorption and improved rotational force mitigation in testing.</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top">
+              <h3>Client Dashboard & CRM Portal</h3>
+              <span class="tag">Software</span>
+            </div>
+            <ul>
+              <li>Developed web‑based client portals using Firebase/Firestore + Next.js for SMEs.</li>
+              <li>Enabled secure file access filtering and user‑specific content delivery.</li>
+              <li>Integrated analytics to support client engagement and CRM‑driven sales insights.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Skills</h2>
+          <p>A mix of mechanical delivery, biomedical analysis, and practical software capability.</p>
+        </div>
+
+        <div class="skill-grid reveal">
+          <div class="skill-block">
+            <h3>Design & Manufacturing</h3>
+            <p class="muted">CAD, DFM, prototyping, drawings</p>
+            <div class="pill-row">
+              <span class="pill">Creo</span>
+              <span class="pill">SolidWorks</span>
+              <span class="pill">3D Printing</span>
+              <span class="pill">Product design</span>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <h3>Analysis</h3>
+            <p class="muted">Data, modelling, biomechanics</p>
+            <div class="pill-row">
+              <span class="pill">MATLAB</span>
+              <span class="pill">Python</span>
+              <span class="pill">Biomechanics</span>
+              <span class="pill">Signal processing</span>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <h3>Standards & Quality</h3>
+            <p class="muted">Regulated environments</p>
+            <div class="pill-row">
+              <span class="pill">ISO 13485</span>
+              <span class="pill">FDA</span>
+              <span class="pill">ISO safety</span>
+              <span class="pill">Documentation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container reveal">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Fastest way to reach me is email. I’m open to roles under strong technical leadership and clear ownership.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Email</h3>
+            <p>
+              <a class="mono" href="mailto:Sam.black.01@gmail.com" id="emailLink">Sam.black.01@gmail.com</a>
+            </p>
+            <button class="btn btn-ghost" type="button" id="copyEmail">Copy email</button>
+          </div>
+
+          <div class="contact-card">
+            <h3>LinkedIn</h3>
+            <p>
+              <a href="https://www.linkedin.com/in/sam-black" target="_blank" rel="noopener">linkedin.com/in/sam-black</a>
+            </p>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/sam-black" target="_blank" rel="noopener">Open LinkedIn</a>
+          </div>
+
+          <div class="contact-card">
+            <h3>CV</h3>
+            <p class="muted">PDF • updated 2026</p>
+            <a class="btn" href="assets/Samuel_Black_CV_2026.pdf" target="_blank" rel="noopener">Download CV</a>
+          </div>
+        </div>
+
+        <p class="tiny muted">Last updated: 17 Jan 2026</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Samuel Black. All rights reserved.</p>
+      <a class="to-top" href="#">Back to top ↑</a>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
+
+  <!-- Vercel Web Analytics -->
   <script>
-    // Smooth scroll on nav link click
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+
+  <!-- Vercel Speed Insights -->
+  <script>
+    window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
 </body>
 </html>
