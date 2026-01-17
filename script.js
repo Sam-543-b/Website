@@ -22,14 +22,14 @@
     return root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
   }
 
-  function updateThemeIcon() {
+  function updateThemeLabel() {
     if (!themeToggle) return;
-    const icon = themeToggle.querySelector('.icon');
-    if (!icon) return;
-    icon.textContent = currentTheme() === 'light' ? '☀' : '☾';
+    const label = themeToggle.querySelector(".btn-text");
+    if (!label) return;
+    label.textContent = currentTheme() === "light" ? "Dark" : "Light";
   }
 
-  updateThemeIcon();
+  updateThemeLabel();
 
   if (themeToggle) {
     themeToggle.addEventListener('click', () => {
@@ -37,7 +37,7 @@
       if (next === 'light') root.setAttribute('data-theme', 'light');
       else root.removeAttribute('data-theme');
       localStorage.setItem('theme', next);
-      updateThemeIcon();
+      updateThemeLabel();
     });
   }
 

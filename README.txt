@@ -6,4 +6,4 @@ Deploy (Vercel)
 
 Notes
 - Analytics scripts are included in index.html.
-- CV PDF is in /assets and linked from the site.
+- CV PDF is in the project root as Samuel_Black_CV_2026.pdf and linked from the site.
